@@ -148,49 +148,49 @@ Only takes effect if `doom-themes-treemacs-enable-variable-pitch' is non-nil."
       :config
       (progn
         (treemacs-create-icon
-         :icon (format " %s\t" (all-the-icons-octicon "repo" :height 1.2 :v-adjust -0.1 :face 'doom-themes-treemacs-root-face))
+         :icon (format " %s\t" (nerd-icons-insert-octicon "repo" :height 1.2 :v-adjust -0.1 :face 'doom-themes-treemacs-root-face))
          :extensions (root-open))
         (treemacs-create-icon
-         :icon (format " %s\t" (all-the-icons-octicon "repo" :height 1.2 :v-adjust -0.1 :face 'doom-themes-treemacs-root-face))
+         :icon (format " %s\t" (nerd-icons-insert-octicon "repo" :height 1.2 :v-adjust -0.1 :face 'doom-themes-treemacs-root-face))
          :extensions (root-closed))
         (treemacs-create-icon
          :icon (format "%s\t%s\t"
-                       (all-the-icons-octicon "chevron-down" :height 0.75 :v-adjust 0.1 :face face-spec)
-                       (all-the-icons-octicon "file-directory" :v-adjust 0 :face face-spec))
+                       (nerd-icons-insert-octicon "chevron-down" :height 0.75 :v-adjust 0.1 :face face-spec)
+                       (nerd-icons-insert-octicon "file-directory" :v-adjust 0 :face face-spec))
          :extensions (dir-open))
         (treemacs-create-icon
          :icon (format "%s\t%s\t"
-                       (all-the-icons-octicon "chevron-right" :height 0.75 :v-adjust 0.1 :face face-spec)
-                       (all-the-icons-octicon "file-directory" :v-adjust 0 :face face-spec))
+                       (nerd-icons-insert-octicon "chevron-right" :height 0.75 :v-adjust 0.1 :face face-spec)
+                       (nerd-icons-insert-octicon "file-directory" :v-adjust 0 :face face-spec))
          :extensions (dir-closed))
         (treemacs-create-icon
          :icon (format "%s\t%s\t"
-                       (all-the-icons-octicon "chevron-down" :height 0.75 :v-adjust 0.1 :face face-spec)
-                       (all-the-icons-octicon "package" :v-adjust 0 :face face-spec)) :extensions (tag-open))
+                       (nerd-icons-insert-octicon "chevron-down" :height 0.75 :v-adjust 0.1 :face face-spec)
+                       (nerd-icons-insert-octicon "package" :v-adjust 0 :face face-spec)) :extensions (tag-open))
         (treemacs-create-icon
          :icon (format "%s\t%s\t"
-                       (all-the-icons-octicon "chevron-right" :height 0.75 :v-adjust 0.1 :face face-spec)
-                       (all-the-icons-octicon "package" :v-adjust 0 :face face-spec))
+                       (nerd-icons-insert-octicon "chevron-right" :height 0.75 :v-adjust 0.1 :face face-spec)
+                       (nerd-icons-insert-octicon "package" :v-adjust 0 :face face-spec))
          :extensions (tag-closed))
         (treemacs-create-icon
-         :icon (format "%s\t" (all-the-icons-octicon "tag" :height 0.9 :v-adjust 0 :face face-spec))
+         :icon (format "%s\t" (nerd-icons-insert-octicon "tag" :height 0.9 :v-adjust 0 :face face-spec))
          :extensions (tag-leaf))
         (treemacs-create-icon
-         :icon (format "%s\t" (all-the-icons-octicon "flame" :v-adjust 0 :face face-spec))
+         :icon (format "%s\t" (nerd-icons-insert-octicon "flame" :v-adjust 0 :face face-spec))
          :extensions (error))
         (treemacs-create-icon
-         :icon (format "%s\t" (all-the-icons-octicon "stop" :v-adjust 0 :face face-spec))
+         :icon (format "%s\t" (nerd-icons-insert-octicon "stop" :v-adjust 0 :face face-spec))
          :extensions (warning))
         (treemacs-create-icon
-         :icon (format "%s\t" (all-the-icons-octicon "info" :height 0.75 :v-adjust 0.1 :face face-spec))
+         :icon (format "%s\t" (nerd-icons-insert-octicon "info" :height 0.75 :v-adjust 0.1 :face face-spec))
          :extensions (info))
         (treemacs-create-icon
-         :icon (format "  %s\t" (all-the-icons-octicon "file-media" :v-adjust 0 :face face-spec))
+         :icon (format "  %s\t" (nerd-icons-insert-octicon "file-media" :v-adjust 0 :face face-spec))
          :extensions ("ai" "aiff" "avi" "bmp" "eps" "flac" "gif" "ico" "indd"
                       "jpeg" "jpg" "midi" "mkv" "mov" "mp3" "mp4" "ogg" "png"
                       "psd" "svg" "tif" "tiff" "wav" "webm" "webp"))
         (treemacs-create-icon
-         :icon (format "  %s\t" (all-the-icons-octicon "file-code" :v-adjust 0 :face face-spec))
+         :icon (format "  %s\t" (nerd-icons-insert-octicon "file-code" :v-adjust 0 :face face-spec))
          :extensions ("accdb" "accdt" "actionscript" "adoc" "adoc" "ansible"
                       "antlr" "applescript" "asciidoc" "asm" "c" "cask" "cc"
                       "cc" "clj" "cljc" "cljs" "cmake" "coffee" "cpp" "css"
@@ -212,7 +212,7 @@ Only takes effect if `doom-themes-treemacs-enable-variable-pitch' is non-nil."
                       "vagrantfile" "vh" "vhd" "vhdl" "vhms" "vim" "vue" "xsl"
                       "zsh" "zshrc"))
         (treemacs-create-icon
-         :icon (format "  %s\t" (all-the-icons-octicon "book" :v-adjust 0 :face face-spec))
+         :icon (format "  %s\t" (nerd-icons-insert-octicon "book" :v-adjust 0 :face face-spec))
          :extensions ("azw" "azw3" "cb7" "cba" "cbr" "cbt" "cbz" "ceb" "chm"
                       "djvu" "doc" "docx" "exe" "fb2" "inf" "kf8" "kfx" "lit"
                       "lrf" "lrx" "mobi" "opf" "or" "oxps" "pdb" "pdb" "pdb"
@@ -235,22 +235,22 @@ Only takes effect if `doom-themes-treemacs-enable-variable-pitch' is non-nil."
                       "xresources" "yaml" "yarn-integrity" "yarnclean"
                       "yarnignore" "yarnrc" "yml"))
         (treemacs-create-icon
-         :icon (format "  %s\t" (all-the-icons-octicon "file-text" :v-adjust 0 :face face-spec))
+         :icon (format "  %s\t" (nerd-icons-insert-octicon "file-text" :v-adjust 0 :face face-spec))
          :extensions ("md" "markdown" "rst" "org" "log" "txt" "contribute"
                       "license" "readme" "changelog"))
         (treemacs-create-icon
-         :icon (format "  %s\t" (all-the-icons-octicon "file-binary" :v-adjust 0 :face face-spec))
+         :icon (format "  %s\t" (nerd-icons-insert-octicon "file-binary" :v-adjust 0 :face face-spec))
          :extensions ("exe" "dll" "obj" "so" "o" "out" "elc" "cmake-cache" "csr"
                       "eslintcache" "crt" "cer" "der" "pfx" "p12" "p7b" "p7r"
                       "DS_STORE" "key" "pem" "src" "crl" "sst" "stl" "ipynb"))
         (treemacs-create-icon
-         :icon (format "  %s\t" (all-the-icons-octicon "file-pdf" :v-adjust 0 :face face-spec))
+         :icon (format "  %s\t" (nerd-icons-insert-octicon "file-pdf" :v-adjust 0 :face face-spec))
          :extensions ("pdf"))
         (treemacs-create-icon
-         :icon (format "  %s\t" (all-the-icons-octicon "file-zip" :v-adjust 0 :face face-spec))
+         :icon (format "  %s\t" (nerd-icons-insert-octicon "file-zip" :v-adjust 0 :face face-spec))
          :extensions ("zip" "xz" "7z" "tar" "gz" "rar" "tgz" "jar"))
         (treemacs-create-icon
-         :icon (format "  %s\t" (all-the-icons-octicon "file-text" :v-adjust 0 :face face-spec))
+         :icon (format "  %s\t" (nerd-icons-insert-octicon "file-text" :v-adjust 0 :face face-spec))
          :extensions (fallback))))
 
     (treemacs-create-theme "doom-colors"
@@ -258,25 +258,25 @@ Only takes effect if `doom-themes-treemacs-enable-variable-pitch' is non-nil."
       :config
       (progn
         (treemacs-create-icon
-         :icon (format " %s\t" (all-the-icons-octicon "repo" :height 1.2 :v-adjust -0.1 :face 'doom-themes-treemacs-root-face))
+         :icon (format " %s\t" (nerd-icons-insert-octicon "repo" :height 1.2 :v-adjust -0.1 :face 'doom-themes-treemacs-root-face))
          :extensions (root-open))
         (treemacs-create-icon
-         :icon (format " %s\t" (all-the-icons-octicon "repo" :height 1.2 :v-adjust -0.1 :face 'doom-themes-treemacs-root-face))
+         :icon (format " %s\t" (nerd-icons-insert-octicon "repo" :height 1.2 :v-adjust -0.1 :face 'doom-themes-treemacs-root-face))
          :extensions (root-closed))
         (treemacs-create-icon
-         :icon (format "%s\t" (all-the-icons-octicon "flame" :height 0.8 :v-adjust 0 :face 'all-the-icons-red))
+         :icon (format "%s\t" (nerd-icons-insert-octicon "flame" :height 0.8 :v-adjust 0 :face 'all-the-icons-red))
          :extensions (error))
         (treemacs-create-icon
-         :icon (format "%s\t" (all-the-icons-octicon "stop" :height 0.8 :v-adjust 0 :face 'all-the-icons-yellow))
+         :icon (format "%s\t" (nerd-icons-insert-octicon "stop" :height 0.8 :v-adjust 0 :face 'all-the-icons-yellow))
          :extensions (warning))
         (treemacs-create-icon
-         :icon (format "%s\t" (all-the-icons-octicon "info" :height 0.75 :v-adjust 0.1 :face 'all-the-icons-green))
+         :icon (format "%s\t" (nerd-icons-insert-octicon "info" :height 0.75 :v-adjust 0.1 :face 'all-the-icons-green))
          :extensions (info))
         (treemacs-create-icon
-         :icon (format "  %s\t" (all-the-icons-alltheicon "git" :height 0.85 :v-adjust 0.0 :face 'all-the-icons-red))
+         :icon (format "  %s\t" (nerd-icons-insert "git" :height 0.85 :v-adjust 0.0 :face 'all-the-icons-red))
          :extensions ("gitignore" "git" "gitattributes" "gitconfig" "gitmodules"))
         (treemacs-create-icon
-         :icon (format "%s\t" (all-the-icons-octicon "book" :height 1.0 :v-adjust 0.0 :face 'all-the-icons-blue))
+         :icon (format "%s\t" (nerd-icons-insert-octicon "book" :height 1.0 :v-adjust 0.0 :face 'all-the-icons-blue))
          :extensions (license))
 
         (dolist (item all-the-icons-extension-icon-alist)
@@ -296,10 +296,10 @@ Only takes effect if `doom-themes-treemacs-enable-variable-pitch' is non-nil."
         ;; regexp is too complicated to be reversed with
         ;; `doom-themes--get-treemacs-extensions' -- which is too naive)
         (treemacs-create-icon
-         :icon (format "  %s\t" (all-the-icons-fileicon "R" :v-adjust 0 :face 'all-the-icons-dblue))
+         :icon (format "  %s\t" (nerd-icons-insert-fileicon "R" :v-adjust 0 :face 'all-the-icons-dblue))
          :extensions ("r"))
         (treemacs-create-icon
-         :icon (format "  %s\t" (all-the-icons-octicon "file-code" :v-adjust 0 :face face-spec))
+         :icon (format "  %s\t" (nerd-icons-insert-octicon "file-code" :v-adjust 0 :face face-spec))
          :extensions ("elc")))))
 
   (treemacs-load-theme doom-themes-treemacs-theme))
